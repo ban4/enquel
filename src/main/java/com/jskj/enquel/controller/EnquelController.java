@@ -17,12 +17,7 @@ public class EnquelController {
     @GetMapping("/getInfo/{id}")
     public String getInfo(@PathVariable int id){
 
-        if (1 < id) {
-            return "查询失败";
-        }else {
-            return "name: " + name + " --- age: " + age;
-        }
-
+        return "查询失败";
     }
 
 }
